@@ -156,6 +156,6 @@ Example represents 1-port model when only one token exists in the topology and t
 
 Since at final stage all processes know the leader ID than ring topology can be transformed to tree topology with leader in Root. TCP Sockets allow do it very simple.
 
-It's not neccessary run scripts on the same physical host. Script can be used over network. For doing that instead of specifying socket connection socket:port format must be used.
+It's not neccessary run scripts on the same physical host. Script can be used over network. For doing that instead of specifying socket connection, socket:port format must be used.
 
-Work for each process is shown in its output. Complexity of elections can be easily calculated.
+Work for each process is shown in its output as number of steps. Complexity of elections can be easily calculated.

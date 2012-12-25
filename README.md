@@ -139,6 +139,7 @@ Output of the node 40071 is:
 Notice! The process itself does not have to become the new leader. The last round of elections is informing all processes about leader ID. All processes receive message and move to standby mode.
 
 Here is full output of the node 33283.
+
 	>./node.pl 
 	ID : 33283
 	connect to: 44954
@@ -149,5 +150,12 @@ Here is full output of the node 33283.
 
 Election is finished. Leader is known.
 
-###Conclusions
+###Conclusions and possible improvements.
 
+Example represents 1-port model when only one token exists in the topology and transfering from one process to another. But model can be easily converted to 2-port, 3-port, ... all-port model. Just send initial ping to 2,3, .. all processes and they will start exchanging.
+
+Since at final stage all processes know the leader ID than ring topology can be transformed to tree topology with leader in Root. TCP Sockets allow do it very simple.
+
+It's not neccessary run scripts on the same physical host. Script can be used over network. For doing that instead of specifying socket connection socket:port format must be used.
+
+Work for each process is shown in its output. Complexity of elections can be easily calculated.

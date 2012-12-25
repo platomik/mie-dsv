@@ -1,7 +1,6 @@
-#MIE-DSV. Distributed Systems and Computing
+#MIE-DSV. Distributed Systems and Computing.
 
-
-###Implementation the PETERSON/DOLEV-KLAWE-RODEH election algorithm in distributed environment.
+##Implementation the PETERSON/DOLEV-KLAWE-RODEH election algorithm in distributed environment.
 
 
 
